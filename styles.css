@@ -1,1 +1,166 @@
 
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family:  poppins,sans-serif;
+  }
+  /* common css */
+  .d-flex {
+    display: flex;
+  }
+  .flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-vcenter {
+    justify-content: center;
+  }
+  .flex-hcenter {
+    align-items: center;
+  }
+  .f-dir-col{
+    flex-direction: column;
+  }
+  .t-center {
+    text-align: center;
+  }
+  .flex-sp-between{
+    justify-content: space-between;
+  }
+  .btn {
+    padding: 10px;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  span::first-letter{
+    color: #3a70a3;
+  }
+  .search-container.d-flex {
+    /* border: 1px solid; */
+    gap: 5px;
+    font-size: 25px;
+    height: 50px;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .app-container {
+    /* display: flex; */
+    /* border: 1px solid; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    max-width: 700px;
+    min-height: 100%;
+    /* position: relative; */
+    /* overflow-y: scroll; */
+    
+  }
+  
+  .card {
+    padding: 10px;
+    background-color: rgb(58, 112, 163);
+    border-radius: 10px;
+    border: none;
+    color: white;
+  }
+  .input {
+    /* flex: 1; */
+    height: 100%;
+    border: none;
+    padding-left: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    outline: none;
+  }
+  
+  .search-box {
+    border-radius: 10px;
+    font-size: 25px;
+    /* border: 1px solid; */
+    /* display: flex; */
+    /* align-items: center; */
+    background-color: #d9d9d9;
+  }
+  .searach-btn{
+      background: transparent;
+      border:none;
+      font-size: 20px;
+      outline: none;
+  }
+  .cursor{
+      cursor: pointer;
+  }
+  
+  .active{
+      background-color: rgb(56 182 255);
+  }
+  
+  .parent{
+      /* display: flex; */
+      margin-top: 5px;
+      /* justify-content: space-between; */
+      width: 100%;
+      font-size: 18px;
+  }
+  .w-60{
+      width: 60%;
+  }
+  .w-20{
+      width: 20%;
+  }
+  
+  .t-overflow{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: nowrap;
+  }
+  
+  .ml-20{
+      margin-left: 20px;
+  }
+  .fixed-top{
+    /* border: 1px solid red; */
+    position: sticky;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    /* background-color: white; */
+
+  }
+  .card-container{
+    /* border: 5px solid red; */
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 3px;
+    margin-bottom: 2px;
+  }
+
+  /* scroll-bar style */
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+ /* Track */
+/* ::-webkit-scrollbar-track {
+  background :rgb(29, 184, 223) ;
+} */
+ 
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3a70a3; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orange; 
+}
+

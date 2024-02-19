@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>ISRO</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-    <div id="isro">
-
-        <div class="container">
-            
-            <img src="/Logo.jpeg" alt="logo">
-            <h1>Indian Space Research Organization</h1>
-            <p>Search for ISRO centres based on place, state and name </p>
-            <div class="search-container">
-                <input type="search" placeholder="Type here .......">
-                <button type="submit">Search</button>
-
-                
-            </div>
+  </head>
+  <body class="d-flex flex-vcenter">
+    <div class="app-container d-flex f-dir-col">
+      <div class="fixed-top">
+        <div class="logo d-flex flex-hcenter">
+          <img src="./isro_logo.png" width="100" height="100" alt="isro" />
+          <h1 class="ml-20"><span class="abc">India</span> <span class="abc">Space</span> <span class="abc">Research</span> <span class="abc">Organisation</span> </h1>
         </div>
+        <div class="head-container">
+          <h2 class="card t-center">
+            Search for ISRO centres based on place, state amd name
+          </h2>
+          <div class="search-container d-flex">
+            <div class="search-box d-flex flex-vcenter w-50">
+              <input
+                type="text"
+                class="input flex-1 js-input"
+                placeholder="Type here..."
+              />
+              <button class="searach-btn cursor js-search-btn">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+
+            <button class="btn flex-1 card cursor js-city-btn">CITY</button>
+            <button class="btn flex-1 card cursor js-state-btn">STATE</button>
+            <button class="btn flex-1 card cursor js-center-btn active">
+              CENTER
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="js-card-container card-container"></div>
     </div>
-</body>
+    <script src="./App.js"></script>
+  </body>
 </html>
+
